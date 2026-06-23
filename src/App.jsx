@@ -1,3 +1,6 @@
+import { MusicLibrary } from './components/MusicLibrary.jsx'
+import { sampleMusic } from './data/sampleMusic.js'
+
 const focusAreas = [
   {
     title: 'Collect',
@@ -16,28 +19,13 @@ const focusAreas = [
   },
 ]
 
-const sampleMusic = [
-  {
-    title: 'Midnight discovery',
-    artist: 'Unknown artist',
-    source: 'YouTube',
-    tags: ['late night', 'ambient', 'to revisit'],
-  },
-  {
-    title: 'Album that changed my taste',
-    artist: 'Saved for later',
-    source: 'Bandcamp',
-    tags: ['album', 'personal history', 'deep listen'],
-  },
-]
-
 function App() {
   return (
     <main>
       <Header />
       <Hero />
       <FocusAreas />
-      <LibraryPreview />
+      <MusicLibrary items={sampleMusic} />
       <LearningNote />
     </main>
   )
@@ -49,7 +37,7 @@ function Header() {
       <p>Sama</p>
       <nav aria-label="Primary navigation">
         <a href="#vision">Vision</a>
-        <a href="#library-preview">Library</a>
+        <a href="#library">Library</a>
         <a href="#learning">Learning</a>
       </nav>
     </header>
@@ -79,32 +67,6 @@ function FocusAreas() {
           <article key={area.title}>
             <h3>{area.title}</h3>
             <p>{area.description}</p>
-          </article>
-        ))}
-      </div>
-    </section>
-  )
-}
-
-function LibraryPreview() {
-  return (
-    <section id="library-preview" aria-labelledby="library-preview-heading">
-      <h2 id="library-preview-heading">Early library preview</h2>
-      <p>
-        Phase 1 starts with manual entries. The goal is to understand the shape of
-        the music library before adding integrations or automation.
-      </p>
-      <div>
-        {sampleMusic.map((item) => (
-          <article key={item.title}>
-            <p>{item.source}</p>
-            <h3>{item.title}</h3>
-            <p>{item.artist}</p>
-            <ul>
-              {item.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
           </article>
         ))}
       </div>
