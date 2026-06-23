@@ -1,5 +1,5 @@
 # Sama
-Introducing one of my first passion projects, Sama is my own personal space where I wish to curate the entiriy of my musical catalog.
+Introducing one of my first passion projects, Sama is my own personal space where I wish to curate the entirety of my musical catalog.
 Sama is a personal music curation platform for collecting, organizing, connecting, and revisiting music across many sources.
 
 This project is also a learning log. It documents my process of building a real application while learning React, modern web development, and software engineering fundamentals.
