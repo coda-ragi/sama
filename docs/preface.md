@@ -1,17 +1,17 @@
 # Preface
 
-Let me start by saying that the genesis of this project began as an attempt to solve a personal problem.
+So, here's the thing: the only time I feel I'm living a heck of a life is when I'm creating stuff or, in general, playing around with cool things. And that is what led to the genesis of this project, which began as an attempt to solve a personal problem.
 
-I love music, and am personally distraught by how the modern streaming ecosystem fails to provide an integrative user-autonomous experience when it comes to curating the music we love. I consume from many different places—streaming platforms, YouTube, Bandcamp, local files, recommendations from friends, and random discoveries buried deep within the internet. Over time, I realized that while I was collecting music, I wasn't really building a relationship with it. Albums, artists, notes, moods, and discoveries were scattered across multiple platforms with no central place that truly felt like mine.
+I love music, and am personally distraught by how the modern streaming ecosystem fails to provide a unified, user-driven experience when it comes to organizing the tracks we love. I consume from many different places—streaming platforms, YouTube, Bandcamp, local files, recommendations from friends, and random discoveries buried deep within the internet. Over time, I realized that while I was collecting music, I wasn't really connecting with it the way I wanted to. Albums, artists, notes, moods, and discoveries were scattered across multiple platforms with no central place that truly felt like mine. 
 
 The long-term vision of this project is to build a personal music curation platform: a digital space where I can organize, connect, explore, and revisit music on my own terms.
 
-This repository also serves a second purpose: documenting my journey as a developer.
+But here's the thing: while I have ideas of my own, when it comes to implementation... I can't code yet. However, it doesn't take away from the fact that I've always loved and wanted to pursue it. Therefore, this repository also serves a second purpose: documenting my journey as a developer. 
 
-I am building this project while learning React, modern web development, and software engineering fundamentals. Rather than treating AI as a replacement for learning, I am using it as a mentor, reviewer, and collaborator. Tools such as GPT-5.5 and OpenCode are used to discuss architecture, explain concepts, review code, and help overcome roadblocks. All generated code is reviewed, modified, and understood before being incorporated into the project.
+I am building this project while learning React, modern web development, and software engineering fundamentals. Rather than treating AI as a replacement for learning, I am using it as a mentor, reviewer, and collaborator. Tools such as GPT-5.5 and OpenCode are used to discuss architecture, explain concepts, review code, and help overcome roadblocks. All generated code is reviewed, modified, and understood before being incorporated into the project. 
 
-The goal is not to see how quickly a project can be generated. The goal is to understand how it is built.
+The goal is not to see how quickly a project can be generated. The goal is to understand the nitty-gritty of how things are built, while having fun and learning things along the way that will help me create even more cool stuff.
 
-This repository is therefore both a product and a learning log. Progress may be incremental, mistakes will be visible, and ideas will evolve over time. I hope that by documenting the process honestly, I can create something useful while developing the skills needed to build larger systems in the future.
+This repository is therefore both a product and a learning log. Progress may be incremental, mistakes will be visible, and ideas will evolve over time. I hope that by documenting the process honestly, I can create something useful while developing the skills needed to build larger systems in the future. 
 
-Every feature added here represents another step toward understanding the craft of software development—and toward building a music library that truly feels personal.
+Every feature added here represents another step toward understanding the craft of software development—and toward building a music library that truly feels personal. Let's get started. 
