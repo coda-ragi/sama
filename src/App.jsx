@@ -1,7 +1,4 @@
-import { MusicLibrary } from './components/MusicLibrary.jsx'
-import { sampleMusic } from './data/sampleMusic.js'
-
-const focusAreas = [
+const features = [
   {
     title: 'Collect',
     description:
@@ -21,13 +18,14 @@ const focusAreas = [
 
 function App() {
   return (
-    <main>
+    <>
       <Header />
-      <Hero />
-      <FocusAreas />
-      <MusicLibrary items={sampleMusic} />
-      <LearningNote />
-    </main>
+      <main>
+        <Hero />
+        <FeatureList />
+      </main>
+      <Footer />
+    </>
   )
 }
 
@@ -36,9 +34,7 @@ function Header() {
     <header>
       <p>Sama</p>
       <nav aria-label="Primary navigation">
-        <a href="#vision">Vision</a>
-        <a href="#library">Library</a>
-        <a href="#learning">Learning</a>
+        <a href="#start">Get Started</a>
       </nav>
     </header>
   )
@@ -46,27 +42,24 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="vision">
+    <section id="start">
       <p>Personal music curation</p>
-      <h1>A place to collect, understand, and revisit music on your own terms.</h1>
-      <p>
-        Sama is an early-stage platform for organizing music from scattered sources
-        into a library shaped by notes, moods, tags, memories, and intentional
-        collections.
-      </p>
+      <h1>Welcome to Sama</h1>
+      <p>A simple place to collect, curate, and revisit music that matters to you.</p>
+      <a href="#features">Start Now</a>
     </section>
   )
 }
 
-function FocusAreas() {
+function FeatureList() {
   return (
-    <section aria-labelledby="focus-heading">
-      <h2 id="focus-heading">What the platform should help with</h2>
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">What you can do</h2>
       <div>
-        {focusAreas.map((area) => (
-          <article key={area.title}>
-            <h3>{area.title}</h3>
-            <p>{area.description}</p>
+        {features.map((feature) => (
+          <article key={feature.title}>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
           </article>
         ))}
       </div>
@@ -74,15 +67,11 @@ function FocusAreas() {
   )
 }
 
-function LearningNote() {
+function Footer() {
   return (
-    <section id="learning" aria-labelledby="learning-heading">
-      <h2 id="learning-heading">Built as a learning project</h2>
-      <p>
-        This repository is both a product and a record of learning React, web
-        development, and software engineering fundamentals step by step.
-      </p>
-    </section>
+    <footer>
+      <p>© 2026 Sama</p>
+    </footer>
   )
 }
 
